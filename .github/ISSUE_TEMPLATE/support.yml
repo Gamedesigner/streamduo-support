@@ -1,0 +1,29 @@
+name: Stream Duo support
+description: Questions, bugs or purchase-recovery help
+title: "[Support] "
+body:
+  - type: markdown
+    attributes:
+      value: "This request is PUBLIC. Never post stream keys, passwords, payment information, private video or personal data. We never need your stream key to investigate a bug."
+  - type: dropdown
+    id: topic
+    attributes:
+      label: Topic
+      options:
+        - General question
+        - Streaming or recording
+        - Chat safety
+        - Purchase recovery
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the issue and steps to reproduce without secrets or private media.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: App and iOS versions (optional)
